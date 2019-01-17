@@ -23,8 +23,9 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    compile ("org.postgresql:postgresql") // Dependency for postgresql
+    compile("org.postgresql:postgresql")
     // compile("com.h2database:h2")
+    compile("org.thymeleaf.extras:thymeleaf-extras-springsecurity5") // Using 4 instead of 5 causes build to fail
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-devtools")
